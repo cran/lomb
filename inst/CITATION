@@ -1,0 +1,12 @@
+citHeader("To cite package 'lomb' in a publication use:")
+
+citEntry(entry="Article",
+  title = "The Lomb-Scargle Periodogram in Biological Rhythm Research: Analysis of Incomplete and Unequally Spaced Time-Series",
+        author = as.person("T. Ruf"),
+	journal = "Biological Rhythm Research",
+  	year = "1999",
+	volume = "30",
+	pages = "178-201",
+
+        textVersion = "Ruf, T. (1999) The Lomb-Scargle Periodogram in Biological Rhythm Research: Analysis of Incomplete and Unequally Spaced Time-Series. Biol. Rhythm Res. 30: 178-201")
+
