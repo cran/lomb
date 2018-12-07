@@ -1,1 +1,7 @@
 exportPattern("^[[:alpha:]]+")
+importFrom("graphics", "abline", "hist", "lines", "par", "plot")
+importFrom("stats", "is.ts", "var")
+
+S3method(plot,lsp)
+S3method(summary,lsp)
+S3method(summary,randlsp)
