@@ -1,10 +1,10 @@
-18732b00fbc24e248387acfbb601acdc *DESCRIPTION
+84553f5e07e408e45026f3f310fc01a3 *DESCRIPTION
 afd86b7b9600c972c0b179842d864f8f *NAMESPACE
 79fc753c84418d95eef05af7abdc2d1d *R/lspfunctions.R
 35b86603e9d1d2458eea9560a09206ff *data/ibex.RData
 741b7c0e668d8d9fa938cc72c4cf1519 *inst/CITATION
 6c653fa7a12bdf204408f7844060377e *man/ibex.Rd
-b314c53d02c3d2d249315bfdf3adb978 *man/lomb-package.Rd
+cd3d529265aa46b0727fc45e72c3dacc *man/lomb-package.Rd
 1a576d734b0a0711b02194f34b8551e6 *man/lsp.Rd
 7f7adf46f8b06d6cbf38ec9d5694471c *man/plot.lsp.Rd
 566ed284cb729d561bc8e9b36a07e101 *man/randlsp.Rd

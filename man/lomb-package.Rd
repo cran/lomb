@@ -12,7 +12,7 @@ The Lomb-Scargle periodogram is the most wideley used method to detect even weak
 \tabular{ll}{
 Package: \tab lomb\cr
 Type: \tab Package\cr
-Version: \tab 1.0-0\cr
+Version: \tab 1.2\cr
 Date: \tab 2013-10-16\cr
 License: \tab GPL-2\cr
 }
@@ -32,10 +32,7 @@ Maintainer: Thomas Ruf \email{thomas.ruf@vetmeduni.ac.at}
 Ruf, T. (1999) The Lomb-Scargle Periodogram in Biological Rhythm Research: Analysis of Incomplete and Unequally Spaced Time-Series. \emph{Biological Rhythm Research} \bold{30}: 178--201
 }
 \keyword{ package }
-\seealso{
-Other versions of the Lomb-Scargle periodogram are implemented in packages cts
-(\code{\link[cts]{spec.ls}}) and nlts (\code{\link[nlts]{spec.lomb}})
-}
+
 \examples{
 data(lynx)
 lsp(lynx)
