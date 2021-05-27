@@ -1,6 +1,8 @@
 exportPattern("^[[:alpha:]]+")
-importFrom("graphics", "abline", "hist", "lines", "par", "plot")
-importFrom("stats", "is.ts", "var")
+
+importFrom("stats", "is.ts", "var", "optim")
+import(gridExtra)
+import(ggplot2)
 
 S3method(plot,lsp)
 S3method(summary,lsp)
