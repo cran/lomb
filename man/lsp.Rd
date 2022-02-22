@@ -8,11 +8,11 @@ Computes the Lomb-Scargle periodogram for a time series with irregular (or regul
 }
 \usage{
 lsp(x, times = NULL, from = NULL, to = NULL, type = c("frequency", "period"),
-    ofac = 1, alpha = 0.01, normalize=c("standard","press"), plot = TRUE,...)
+    ofac = 1, alpha = 0.01, normalize=c("standard","press"), plot = TRUE, ...)
 }
 \arguments{
   \item{x}{
-The data to be analyzed.  x can be either a two-column numerical dataframe or matrix, with sampling times in column 1 and measurements in column 2, a single numerical vector containing measurements, or a single vector \code{\link{ts}} object (which will be converted to a numerical vector).
+The data to be analysed.  x can be either a two-column numerical dataframe or matrix, with sampling times in column 1 and measurements in column 2, a single numerical vector containing measurements, or a single vector \code{\link{ts}} object (which will be converted to a numerical vector).
 }
   \item{times}{
 If x is a single vector, times can be provided as a numerical vector of equal length containing sampling times. If x is a vector and times is NULL, the data are assumed to be equally sampled and times is set to 1:length(x).
@@ -39,7 +39,7 @@ The type of normalization used, either \dQuote{standard} or \dQuote{press}. If n
 Logical. If plot=TRUE the periodogram is plotted.
 }
   \item{\dots}{
-Further parameters.
+Further graphical parameters affecting the periodogram plot. 
 }
 }
 \details{
@@ -51,8 +51,8 @@ Significance levels in both lsp and \code{\link{randlsp}}  increase with the num
 A named list with the following components:
 \item{normalize}{The type of normalization used.}
 \item{scanned}{A vector containing the frequencies/periods scanned.}
-\item{power}{A vector containing the normalized power corresponding to scanned frequencies/periods.}
-\item{data}{Names of the data vectors analyzed.}
+\item{power}{A vector containing the normalised power corresponding to scanned frequencies/periods.}
+\item{data}{Names of the data vectors analysed.}
 \item{n}{The length of the data vector.}
 \item{type}{The periodogram type used, either "frequency" or "period".}
 \item{ofac}{The oversampling factor used.}
@@ -65,7 +65,7 @@ A named list with the following components:
 
 }
 \note{
-For a description of the properties of the Lomb-Scargle Periodogram, its computation and comparison with other methods see Ruf, T. (1999).  Function lsp uses the algorithm given by Press et al (1994).  The Lomb-Scargle Periodogram was originally proposed by Lomb N.R. (1976) and further extended by Scargle J.D. (1982). An improved method for assessing the statistical significance of candidate periodicities by Baluev (2008), based on extreme value theory, is also implemented. This implementation uses code modified from the Astropy.timeseries (© Copyright 2011–2021, The Astropy Developers.BSD3) Python package (VanderPlas et al. 2012, 2015).
+For a description of the properties of the Lomb-Scargle Periodogram, its computation and comparison with other methods see Ruf, T. (1999).  Function lsp uses the algorithm given by Press et al (1994).  The Lomb-Scargle Periodogram was originally proposed by Lomb N.R. (1976) and further extended by Scargle J.D. (1982). An improved method for assessing the statistical significance of candidate periodicities by Baluev (2008), based on extreme value theory, is also implemented. This implementation uses code modified from the astropy.timeseries Python package (VanderPlas et al. 2012, 2015).
 }
 \references{
 Baluev, R. V. (2008). Assessing the statistical significance of periodogram peaks.\emph{ Monthly Notices of the Royal Astronomical Society}, \bold{385(3)}, 1279-1285.
@@ -74,13 +74,13 @@ Lomb N.R. (1976) Least-squares frequency analysis of unequally spaced data. \emp
 
 Press W.H., Teukolsky S.A., Vetterling S.T., Flannery, B.P. (1994) \emph{Numerical recipes in C: the art of scientific computing.}2nd edition. Cambridge University Press, Cambridge, 994pp.
 
-Ruf, T. (1999) The Lomb-Scargle Periodogram in Biological Rhythm Research: Analysis of Incomplete and Unequally Spaced Time-Series. \emph{Biological Rhythm Research} \bold{30}: 178--201.
+Ruf, T. (1999) The Lomb-Scargle Periodogram in Biological Rhythm Research: Analysis of Incomplete and Unequally Spaced Time-Series. \emph{Biological Rhythm Research} \bold{30}: 178--201. 
 
 Scargle J.D. (1982) Studies in astronomical time series. II. Statistical aspects of spectral analysis of unevenly spaced data. \emph{The Astrophysical Journal} \bold{302}: 757--763.
 
 VanderPlas, J., Connolly, A. Ivezic, Z. & Gray, A. (2012) Introduction to astroML: Machine learning for astrophysics. \emph{Proceedings of the Conference on Intelligent Data Understanding}
-
-VanderPlas, J. & Ivezic, Z. (2015) Periodograms for Multiband Astronomical Time Series.\emph{The Astrophysical Journal} \bold{812.1}:18
+        
+VanderPlas, J. & Ivezic, Z. (2015) Periodograms for Multiband Astronomical Time Series.\emph{The Astrophysical Jounal} \bold{812.1}:18
 }
 \author{
 Thomas Ruf \email{thomas.ruf@vetmeduni.ac.at} based on code by Press et al (1994).
@@ -106,10 +106,6 @@ summary(lynx.spec)
 time=(runif(200,1,1000))
 y=2*cos(time/6)+rnorm(200,0,4)
 lsp(y,times=time,ofac=10, to=0.3)
-
-# to obtain periodogram as in Press et al (for backwards compatibility):
-result=lsp(y,times=time,to=0.3,normalize="press")
-print(result)
 
 }
 

@@ -1,10 +1,20 @@
 \name{theme_lsp}
 \alias{theme_lsp}
-\docType{data}
-\title{
-ggplot2 theme for periodogram
+\title{lsp theme for ggplot2}
+\usage{
+theme_lsp(bs=18)
+}
+\value{
+A theme element
 }
 \description{
-A theme derived from theme_bw.
+Import lsp ggplot2 theme. It builds on theme_bw.
 }
-\usage{theme_lsp()}
+\arguments{
+  \item{bs}{
+  basesize of font
+}
+}
+\examples{
+plot(lsp(lynx))+theme_lsp(25)
+}

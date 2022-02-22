@@ -5,7 +5,7 @@
 False alarm probability
 }
 \description{
-Computes the statistical significance of peaks (range 0-1) in the standardized periodogram. Typically not called by the user.
+Computes the statistical significance of peaks (range 0-1) in the standardized perodogram. Typically not called by the user.
 }
 \usage{
 pbaluev(Z,fmax,tm)
@@ -24,7 +24,7 @@ a vector with measurement timepoints
 
 }
 \details{
-Based on results in extreme value theory, improved analytic estimations of false alarm probabilities are given.
+Based on results in extreme value theory, improved analytic estimations of false alarm probabilities are given. 
 }
 \value{
 Returns the significance of the largest peak in the periodogram.
@@ -48,5 +48,5 @@ Code based on astropy.timeseries
 pbaluev(0.19,2.0,1:100)
 }
 
-\keyword{ ts }
+ \keyword{ ts }
 

@@ -2,7 +2,7 @@
 \alias{summary.randlsp}
 
 \title{
-Summarize Randomised Lomb-Scargle Periodogram Results
+Summarise Randomised Lomb-Scargle Periodogram Results 
 }
 \description{
 Summary method for class randlsp.
@@ -29,11 +29,11 @@ summary.randlsp returns a one column data.frame with results from function randl
 \item{From}{The lowest frequency (or period, depending on type) inspected.}
 \item{To}{The highest frequency (or period, depending on type) inspected.}
 \item{# frequencies}{The number of frequencies (or periods, depending on type) inspected.}
-\item{PNmax}{The peak normalized power in the periodogram.}
+\item{PNmax}{The peak normalised power in the periodogram.}
 \item{At frequency}{The frequency at which PNmax occurred.}
 \item{At period}{The period at which PNmax occurred.}
-\item{Repeats}{The number of randomizations.}
-\item{P-value (PNmax)}{The probability that PNmax occurred by chance, computed from randomizing the data sequence.}
+\item{Repeats}{The number of randomisations.}
+\item{P-value (PNmax)}{The probability that PNmax occurred by chance, computed from randomising the data sequence.}
 }
 
 \author{
@@ -44,6 +44,6 @@ Thomas Ruf \email{thomas.ruf@vetmeduni.ac.at}
 }
 \examples{
 data(lynx)
-summary(randlsp(500,lynx))
+summary(randlsp(repeats=500,lynx))
 }
 \keyword{ ts }

@@ -1,8 +1,10 @@
 exportPattern("^[[:alpha:]]+")
 
 importFrom("stats", "is.ts", "var", "optim")
+importFrom("plotly","plot_ly")
 import(gridExtra)
 import(ggplot2)
+import(pracma)
 
 S3method(plot,lsp)
 S3method(summary,lsp)

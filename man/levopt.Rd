@@ -1,47 +1,36 @@
 \name{levopt}
 \alias{levopt}
-
-\title{
-Internal function to find significance level
+%- Also NEED an '\alias' for EACH other topic documented here.
+\title{compute level
+%%  ~~function to do ... ~~
 }
 \description{
-Called by optim to find significance value (0-1) corresponding to p-value (x).
+utility function to determine deviation from p-value
 }
 \usage{
 levopt(x, alpha, fmax, tm)
 }
-
+%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x}{
-Initial value of parameter to be optimized.
+%%     ~~Describe \code{x} here~~
 }
   \item{alpha}{
-Desired significance level, defaults to 0.01.
+%%     ~~Describe \code{alpha} here~~
 }
   \item{fmax}{
-Maximum frequency inspected.
+%%     ~~Describe \code{fmax} here~~
 }
   \item{tm}{
-Vector of times inspected.
+%%     ~~Describe \code{tm} here~~
 }
+}
+\value{
+  (log(prob)-log(alpha))^2
 }
 
-\value{
-Scalar. The value at which the periodogram reaches significance.
-}
-\references{
-VanderPlas, J. & Ivezic, Z. (2015) Periodograms for Multiband Astronomical Time Series.\emph{The Astrophysical Journal} \bold{812.1}:18
-}
 \author{
 Thomas Ruf \email{thomas.ruf@vetmeduni.ac.at}.
 }
 
-
-
-
-\seealso{
-pbaluev
-}
-\examples{
-##---- Do not call directly, internal function
-}
+ \keyword{ ts }

@@ -2,7 +2,7 @@
 \alias{summary.lsp}
 
 \title{
-Summarize Lomb-Scargle Periodogram Results
+Summarise Lomb-Scargle Periodogram Results 
 }
 \description{
 Summary method for class lsp.
@@ -27,10 +27,10 @@ summary.lsp returns a one column data.frame with results from function lsp.  Row
 \item{From}{The lowest frequency (or period, depending on type) inspected.}
 \item{To}{The highest frequency (or period, depending on type) inspected.}
 \item{# frequencies}{The number of frequencies (or periods, depending on type) inspected.}
-\item{PNmax}{The peak normalized power in the periodogram.}
+\item{PNmax}{The peak normalised power in the periodogram.}
 \item{At frequency}{The frequency at which PNmax occurred.}
 \item{At period}{The period at which PNmax occurred.}
-\item{P-value (PNmax)}{The probability that PNmax occurred by chance. May slightly vary with the normalization.}
+\item{P-value (PNmax)}{The probability that PNmax occurred by chance, computed from the exponential distribution.}
 }
 
 \author{

@@ -5,7 +5,7 @@
 Utility function called by pbaluev()
 }
 \description{
-Largely from astropy.timeseries
+From astropy.timeseries
 }
 \usage{
 ggamma(N)
