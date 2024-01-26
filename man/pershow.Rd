@@ -1,8 +1,7 @@
 \name{pershow}
 \alias{pershow}
-%- Also NEED an '\alias' for EACH other topic documented here.
+
 \title{show periodogram
-%%  ~~function to do ... ~~
 }
 \description{
 Shows a periodogram in browser window as line and dot plot.
@@ -15,7 +14,7 @@ pershow(object) # object of class "lsp"
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{object}{
-
+  an object of class "lsp"
 }
 }
 
@@ -28,8 +27,11 @@ Thomas Ruf \email{thomas.ruf@vetmeduni.ac.at}
 }
 \examples{
 
-per=lsp(lynx,ofac=5)
+per=lsp(lynx,ofac=2)
 pershow(per)
+
+#In Rstudio go to the viewer pane. Move mouse to point of interest.
+
 }
 
  \keyword{ ts }

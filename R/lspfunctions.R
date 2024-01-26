@@ -1,3 +1,9 @@
+library(ggplot2)
+library (pracma)
+library(gridExtra)
+library (plotly)
+
+
 
 
 theme_lsp=function (bs=18){
@@ -331,14 +337,16 @@ pbaluev <- function(Z,fmax,tm) {
 
 
 levopt<-  function(x,alpha,fmax,tm){
-    prob=pbaluev(x,fmax,tm)
-    (log(prob)-log(alpha))^2
+  prob=pbaluev(x,fmax,tm)
+  (log(prob)-log(alpha))^2
 }
 
 pershow=function(object){
-  datn=data.frame(period=object$scanned,power=object$power)
-  plot_ly(data=datn,type="scatter",mode="lines+markers",linetype="solid",
-          x=~period,y=~power)
+  datn=data.frame(scanned=object$scanned,power=object$power)
+  fig=plot_ly(data=datn,type="scatter",mode="lines+markers",linetype="solid",
+          x=~scanned,y=~power) #%>%
+
+  fig
 }
 
 
@@ -348,14 +356,17 @@ getpeaks=function (object,npeaks=5,plotit=TRUE){
   peaks=pks[,1] 
   tmes=object$scanned[pks[,2]]
   tme=round(tmes,2)
-  
+  if (plotit==TRUE){
   p=plot.lsp(object)
   p=p+ylim(0,peaks[1]*1.2)
   for (i in 1:npeaks){
     p=p+annotate("text", label=paste(tme[i]),y=peaks[i],x=tme[i],color="red",angle=45,size=6,vjust=-1,hjust=-.1)
   }
+   
+  print(p)
+  }
 
-  d=data.frame(time=tme,peaks=peaks)
-  result=list(data=d,plot=p)
-  return(result)
+d=data.frame(time=tme,peaks=peaks)
+
+  return(d)
 }

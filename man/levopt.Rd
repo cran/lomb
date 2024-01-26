@@ -13,16 +13,16 @@ levopt(x, alpha, fmax, tm)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x}{
-%%     ~~Describe \code{x} here~~
+  vector with start values
 }
   \item{alpha}{
-%%     ~~Describe \code{alpha} here~~
+  desired significance level
 }
-  \item{fmax}{
-%%     ~~Describe \code{fmax} here~~
+  \item{fmax}{  
+  the highest frequency inspected
 }
   \item{tm}{
-%%     ~~Describe \code{tm} here~~
+  a vector with measurement timepoints
 }
 }
 \value{
