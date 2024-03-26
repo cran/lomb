@@ -42,7 +42,7 @@ Usually, this function is only called by function lsp. It maybe called by the us
 Invisibly returns the object of class lsp it is called with.
 }
 \author{
-Thomas Ruf \email{thomas.ruf@vetmeduni.ac.at}
+Thomas Ruf \email{thomas.p.ruf@me.com}
 }
 
 \seealso{

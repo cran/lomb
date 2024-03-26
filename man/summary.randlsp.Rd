@@ -37,7 +37,7 @@ summary.randlsp returns a one column data.frame with results from function randl
 }
 
 \author{
-Thomas Ruf \email{thomas.ruf@vetmeduni.ac.at}
+Thomas Ruf \email{thomas.p.ruf@me.com}
 }
 \seealso{
 \code{\link{randlsp}}

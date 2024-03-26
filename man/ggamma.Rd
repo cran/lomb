@@ -23,7 +23,7 @@ sqrt(2 / N) * exp(lgamma(N / 2) - lgamma((N - 1) / 2))
 VanderPlas, J. & Ivezic, Z. (2015) Periodograms for Multiband Astronomical Time Series.\emph{The Astrophysical Journal} \bold{812.1}:18
 }
 \author{
-Thomas Ruf \email{thomas.ruf@vetmeduni.ac.at}.
+Thomas Ruf \email{thomas.p.ruf@me.com}
 }
 
 

@@ -34,7 +34,7 @@ summary.lsp returns a one column data.frame with results from function lsp.  Row
 }
 
 \author{
-Thomas Ruf \email{thomas.ruf@vetmeduni.ac.at}
+Thomas Ruf \email{thomas.p.ruf@me.com}
 }
 
 \seealso{

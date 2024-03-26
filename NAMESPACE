@@ -1,10 +1,12 @@
 exportPattern("^[[:alpha:]]+")
 
 importFrom("stats", "is.ts", "var", "optim")
+importFrom("stats", "median", "na.omit", "quantile")
 importFrom("plotly","plot_ly")
 import(gridExtra)
 import(ggplot2)
 import(pracma)
+import(knitr)
 
 S3method(plot,lsp)
 S3method(summary,lsp)

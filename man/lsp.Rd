@@ -83,7 +83,7 @@ VanderPlas, J., Connolly, A. Ivezic, Z. & Gray, A. (2012) Introduction to astroM
 VanderPlas, J. & Ivezic, Z. (2015) Periodograms for Multiband Astronomical Time Series.\emph{The Astrophysical Jounal} \bold{812.1}:18
 }
 \author{
-Thomas Ruf \email{thomas.ruf@vetmeduni.ac.at} based on code by Press et al (1994).
+Thomas Ruf \email{thomas.p.ruf@me.com} based on code by Press et al (1994).
 }
 
 \seealso{

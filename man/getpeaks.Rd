@@ -29,7 +29,7 @@ Returns a list with
 }
 
 \author{
-Thomas Ruf \email{thomas.ruf@vetmeduni.ac.at}
+Thomas Ruf \email{thomas.p.ruf@me.com}
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

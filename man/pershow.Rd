@@ -19,7 +19,7 @@ pershow(object) # object of class "lsp"
 }
 
 \author{
-Thomas Ruf \email{thomas.ruf@vetmeduni.ac.at}
+Thomas Ruf \email{thomas.p.ruf@me.com}
 }
 
 \seealso{

@@ -71,7 +71,7 @@ A named list with the following items:
 Nemec A.F.L, Nemec J.M. (1985) A test of significance for periods derived using phase-dispersion-miminimization techniques. \emph{The Astronomical Journal} \bold{90}:2317--2320
 }
 \author{
-Thomas Ruf \email{thomas.ruf@vetmeduni.ac.at}
+Thomas Ruf \email{thomas.p.ruf@me.com}
 }
 \seealso{
 \code{\link{lsp}}

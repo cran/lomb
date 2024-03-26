@@ -33,13 +33,12 @@ Returns the significance of the largest peak in the periodogram.
 Baluev, R. V. (2008). Assessing the statistical significance of periodogram peaks.\emph{ Monthly Notices of the Royal Astronomical Society}, \bold{385(3)}, 1279-1285.
 }
 \author{
-Thomas Ruf \email{thomas.ruf@vetmeduni.ac.at}.
+Thomas Ruf \email{thomas.p.ruf@me.com}.
 }
 \note{
 Code based on astropy.timeseries
 }
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 \code{\link{summary.lsp}}

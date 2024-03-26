@@ -30,7 +30,7 @@ levopt(x, alpha, fmax, tm)
 }
 
 \author{
-Thomas Ruf \email{thomas.ruf@vetmeduni.ac.at}.
+Thomas Ruf \email{thomas.p.ruf@me.com}
 }
 
  \keyword{ ts }
